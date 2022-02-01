@@ -99,6 +99,7 @@
 		7A9E46A927A9619800D2F767 /* aMusic */ = {
 			isa = PBXGroup;
 			children = (
+				7A9E46DA27A962A600D2F767 /* Audio */,
 				7A9E46AA27A9619800D2F767 /* AppDelegate.swift */,
 				7A9E46AC27A9619800D2F767 /* SceneDelegate.swift */,
 				7A9E46AE27A9619800D2F767 /* ViewController.swift */,
@@ -125,6 +126,13 @@
 				7A9E46CD27A9619A00D2F767 /* aMusicUITestsLaunchTests.swift */,
 			);
 			path = aMusicUITests;
+			sourceTree = "<group>";
+		};
+		7A9E46DA27A962A600D2F767 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Audio;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
