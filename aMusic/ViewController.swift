@@ -52,10 +52,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.textLabel?.text = song.name
         cell.detailTextLabel?.text = song.albumName
         cell.accessoryType = .disclosureIndicator
-        
+        cell.imageView?.image = UIImage(named: song.imageName)
         cell.textLabel?.font = UIFont(name: "Helvetica-Bold", size: 18)
         cell.detailTextLabel?.font = UIFont(name: "Helvetica", size: 16)
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -63,10 +67,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         let position = indexPath.row
         
-        guard let vc = storyboard?.instantiateViewController(withIdentifier: "player")
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: "player") as? PlayerViewController
         else {
             return
         }
+        
+        vc.songs = songs
+        vc.position = position
+        
+        
         present(vc, animated: true)
     }
 }
