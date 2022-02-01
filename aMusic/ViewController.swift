@@ -14,11 +14,32 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureSongs()
         // Do any additional setup after loading the view.
         table.delegate = self
         table.dataSource = self
     }
     
+    func configureSongs(){
+        songs.append(Song(name: "BOOMBAYAH",
+                          albumName: "YG Entertainment",
+                          artistName: "BLACKPINK",
+                          imageName: "logo",
+                          trackName: "boombayah")
+        )
+        songs.append(Song(name: "LISA-MONEY",
+                          albumName: "YG Entertainment",
+                          artistName: "LISA",
+                          imageName: "logo",
+                          trackName: "lisamoney")
+        )
+        songs.append(Song(name: "PLAYDATE",
+                          albumName: "YG Entertainment",
+                          artistName: "PLAYDATE",
+                          imageName: "logo",
+                          trackName: "playdate")
+        )
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return songs.count
@@ -35,14 +56,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let position = indexPath.row
         
         guard let vc = storyboard?.instantiateViewController(withIdentifier: "player")
-            else {
-                return
-            }
+        else {
+            return
+        }
         present(vc, animated: true)
     }
 }
 
 struct Song {
-    
+    let name: String
+    let albumName: String
+    let artistName: String
+    let imageName: String
+    let trackName: String
 }
 

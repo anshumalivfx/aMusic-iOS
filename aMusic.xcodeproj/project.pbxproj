@@ -16,9 +16,9 @@
 		7A9E46C227A9619A00D2F767 /* aMusicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9E46C127A9619A00D2F767 /* aMusicTests.swift */; };
 		7A9E46CC27A9619A00D2F767 /* aMusicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9E46CB27A9619A00D2F767 /* aMusicUITests.swift */; };
 		7A9E46CE27A9619A00D2F767 /* aMusicUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9E46CD27A9619A00D2F767 /* aMusicUITestsLaunchTests.swift */; };
-		7A9E46DE27A9669400D2F767 /* Playdate Song Download Mp3(DhamakaMusic.Co.IN).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A9E46DB27A9669300D2F767 /* Playdate Song Download Mp3(DhamakaMusic.Co.IN).mp3 */; };
-		7A9E46DF27A9669400D2F767 /* BOOMBAYAH - BLACKPINK 320(PagalWorld).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A9E46DC27A9669400D2F767 /* BOOMBAYAH - BLACKPINK 320(PagalWorld).mp3 */; };
-		7A9E46E027A9669400D2F767 /* Lisa_-_Money.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A9E46DD27A9669400D2F767 /* Lisa_-_Money.mp3 */; };
+		7AD5E66427A9706A006C70E5 /* lisamoney.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7AD5E66127A9706A006C70E5 /* lisamoney.mp3 */; };
+		7AD5E66527A9706A006C70E5 /* boombayah.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7AD5E66227A9706A006C70E5 /* boombayah.mp3 */; };
+		7AD5E66627A9706A006C70E5 /* playdate.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7AD5E66327A9706A006C70E5 /* playdate.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,9 +52,9 @@
 		7A9E46C727A9619A00D2F767 /* aMusicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = aMusicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A9E46CB27A9619A00D2F767 /* aMusicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aMusicUITests.swift; sourceTree = "<group>"; };
 		7A9E46CD27A9619A00D2F767 /* aMusicUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aMusicUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		7A9E46DB27A9669300D2F767 /* Playdate Song Download Mp3(DhamakaMusic.Co.IN).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Playdate Song Download Mp3(DhamakaMusic.Co.IN).mp3"; sourceTree = "<group>"; };
-		7A9E46DC27A9669400D2F767 /* BOOMBAYAH - BLACKPINK 320(PagalWorld).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "BOOMBAYAH - BLACKPINK 320(PagalWorld).mp3"; sourceTree = "<group>"; };
-		7A9E46DD27A9669400D2F767 /* Lisa_-_Money.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Lisa_-_Money.mp3"; sourceTree = "<group>"; };
+		7AD5E66127A9706A006C70E5 /* lisamoney.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lisamoney.mp3; sourceTree = "<group>"; };
+		7AD5E66227A9706A006C70E5 /* boombayah.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = boombayah.mp3; sourceTree = "<group>"; };
+		7AD5E66327A9706A006C70E5 /* playdate.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = playdate.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,9 +137,9 @@
 		7A9E46DA27A962A600D2F767 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
-				7A9E46DC27A9669400D2F767 /* BOOMBAYAH - BLACKPINK 320(PagalWorld).mp3 */,
-				7A9E46DD27A9669400D2F767 /* Lisa_-_Money.mp3 */,
-				7A9E46DB27A9669300D2F767 /* Playdate Song Download Mp3(DhamakaMusic.Co.IN).mp3 */,
+				7AD5E66227A9706A006C70E5 /* boombayah.mp3 */,
+				7AD5E66127A9706A006C70E5 /* lisamoney.mp3 */,
+				7AD5E66327A9706A006C70E5 /* playdate.mp3 */,
 			);
 			path = Audio;
 			sourceTree = "<group>";
@@ -248,11 +248,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AD5E66627A9706A006C70E5 /* playdate.mp3 in Resources */,
+				7AD5E66527A9706A006C70E5 /* boombayah.mp3 in Resources */,
+				7AD5E66427A9706A006C70E5 /* lisamoney.mp3 in Resources */,
 				7A9E46B727A9619A00D2F767 /* LaunchScreen.storyboard in Resources */,
-				7A9E46DF27A9669400D2F767 /* BOOMBAYAH - BLACKPINK 320(PagalWorld).mp3 in Resources */,
-				7A9E46DE27A9669400D2F767 /* Playdate Song Download Mp3(DhamakaMusic.Co.IN).mp3 in Resources */,
 				7A9E46B427A9619A00D2F767 /* Assets.xcassets in Resources */,
-				7A9E46E027A9669400D2F767 /* Lisa_-_Money.mp3 in Resources */,
 				7A9E46B227A9619800D2F767 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
